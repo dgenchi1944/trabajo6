@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+
+        <h1> Cafetería "Foraneo 3,0"</h1>
+        <link rel="stylesheet" href="css/estilo.css">
+        <h3>Menú de Bebidas</h3>
+
+
+        <img src="cafe.jpg" width="300" height="200">
+
+        <hr>
+
+        <table border="0">
+
+            <tr>
+                <td><b>Nombre del cliente:</b></td>
+                <td><input type="text" id="cliente"></td>
+            </tr>
+
+            <tr>
+                <td><b>Cantidad:</b></td>
+                <td><input type="number" id="cantidad" min="1"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h3>Selecciona el tamaño</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grande - $35</td>
+                <td><input type="radio" name="tm" value="35"></td>
+            </tr>
+
+            <tr>
+                <td>Mediano - $30</td>
+                <td><input type="radio" name="tm" value="30"></td>
+            </tr>
+
+            <tr>
+                <td>Chico - $25</td>
+                <td><input type="radio" name="tm" value="25"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h3>Sabores (+ costo adicional)</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Canela (+$2)</td>
+                <td><input type="checkbox" class="extra" value="2" data-nombre="Canela"></td>
+            </tr>
+
+            <tr>
+                <td>Chocolate (+$4)</td>
+                <td><input type="checkbox" class="extra" value="4" data-nombre="Chocolate"></td>
+            </tr>
+
+            <tr>
+                <td>Fresa (+$5)</td>
+                <td><input type="checkbox" class="extra" value="5" data-nombre="Fresa"></td>
+            </tr>
+
+            <tr>
+                <td>Vainilla (+$3)</td>
+                <td><input type="checkbox" class="extra" value="3" data-nombre="Vainilla"></td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="calcular()">total del pedido</button>
+
+    </body>
+    <script src="js/miScript.js"></script>
+
+</html>
